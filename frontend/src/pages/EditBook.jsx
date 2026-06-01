@@ -37,7 +37,7 @@ const EditBook = () => {
     };
     setLoading(true);
     axios
-      .put(`http://localhost:5555/books/${id}`, data)
+      .put(`http://52.66.213.32:5555/books/${id}`, data)
       .then(() => {
         setLoading(false);
         enqueueSnackbar('Book Edited successfully', { variant: 'success' });
